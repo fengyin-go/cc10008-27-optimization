@@ -35,3 +35,42 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .error-text { color: #b42318; }
 .status-legend { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 10px; font-size: 12px; color: var(--muted); }
 .legend-item { background: #eef2f7; border-radius: 999px; padding: 2px 10px; }
+
+/* 对比分析：方案口径、报告版本与下钻 */
+.compare-page .page-actions { gap: 8px; display: flex; }
+.notice { border-radius: 6px; padding: 8px 12px; font-size: 13px; margin: 0 0 10px; }
+.notice.ok { background: #ecfdf3; color: #067647; border: 1px solid #abefc6; }
+.notice.error { background: #fef3f2; color: #b42318; border: 1px solid #fecdca; }
+.audit-list { margin: 0 0 10px; padding: 8px 12px 8px 28px; background: #fff; border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: #475467; }
+.panel { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 12px; margin-bottom: 14px; }
+.panel-title { font-size: 14px; margin: 0 0 10px; }
+.panel-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.muted { color: var(--muted); }
+.small { font-size: 11px; }
+.hint { color: var(--muted); font-size: 12px; margin: 8px 0 0; }
+.tag { display: inline-block; border-radius: 999px; padding: 1px 8px; font-size: 11px; background: #eef2f7; color: #334155; }
+.muted-tag { background: #f1f5f9; color: var(--muted); }
+.state-published { background: #ecfdf3; color: #067647; }
+.state-candidate { background: #fffaeb; color: #b54708; }
+.state-revoked { background: #fef3f2; color: #b42318; }
+.row-active { background: #f0f6ff; }
+.config-grid { display: grid; grid-template-columns: repeat(4, minmax(140px, 1fr)); gap: 10px; align-items: end; }
+.config-grid .wide { grid-column: span 2; }
+.config-grid .filter-item span { margin-bottom: 4px; }
+.compare-columns { display: grid; grid-template-columns: minmax(280px, 1fr) minmax(320px, 1.2fr); gap: 14px; }
+.report-list-items { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; max-height: 520px; overflow: auto; }
+.report-item { border: 1px solid var(--border); border-radius: 6px; padding: 8px 10px; cursor: pointer; display: flex; flex-direction: column; gap: 3px; }
+.report-item.active { border-color: var(--brand); background: #f0f6ff; }
+.report-item-head { display: flex; gap: 8px; align-items: center; }
+.report-meta { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px 16px; margin: 0; font-size: 12px; }
+.report-meta dt { color: var(--muted); }
+.report-meta dd { margin: 0; }
+.drill-panel .drill-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 10px; }
+.sub-title { font-size: 13px; margin: 14px 0 6px; color: #b54708; }
+.evidence { font-size: 11px; color: #475467; max-width: 260px; }
+.row-significant { background: #fff8f6; }
+.row-unclassified { background: #fffaeb; }
+.judgment-significant { background: #fef3f2; color: #b42318; }
+.judgment-threshold-only { background: #fffaeb; color: #b54708; }
+.judgment-within-threshold { background: #ecfdf3; color: #067647; }
+.judgment-unclassified { background: #f1f5f9; color: #475467; }
